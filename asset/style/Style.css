@@ -1,0 +1,87 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+header{
+    grid-area: header;
+    background-color: #25527B;
+    color: white;
+    min-height: 6vh;
+    text-align: center;
+    }
+    menu{
+    grid-area: menu;
+    background-color: E7E7E7;
+    min-height: 80vh;
+    margin: 0px;
+    padding: 0px;
+    }
+        .contenmenu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 150px;
+        }
+
+        ul {
+            list-style: none;
+        }
+            
+    main{
+    grid-area: main;
+    background-color: #66f;
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    align-items: center;
+    padding: 25px;
+    gap:20px
+    
+
+    }
+        .carta{
+            background-color: aliceblue;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .imagen{
+            width:250px ;
+            height:300px;
+        }
+        .imagen img{
+            background-repeat: no-repeat;
+                background-size: cover;
+                height:100%;
+                width: 100%;   
+        }
+        .btnComprar{
+            border: none;
+            width: 100%;
+            height: 30px;
+            background-color: #25527B;
+            color: white;
+        }
+       .conten p{
+        text-align: center;
+       }
+
+
+    footer{
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    min-height: 4vh;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "header header header header header header header header"
+        "menu main main main main main main main "
+        "footer footer footer footer footer footer footer footer";
+  
+     }
